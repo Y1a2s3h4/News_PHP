@@ -1,0 +1,10 @@
+img {
+  width: calc(100% - 20px);
+  height: 250px;
+  margin: 10px;
+}
+.data_grid {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
