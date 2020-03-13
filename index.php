@@ -15,7 +15,7 @@
 </nav>
 
     <?php
-    echo "News_Not_Available!!!";
+    
          $url='http://newsapi.org/v2/top-headlines?country=in&apiKey=4f0ed34c2436488fbea43a2b2255489e';
          $response = file_get_contents($url);
          $data_items = json_decode($response);
