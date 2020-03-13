@@ -16,28 +16,28 @@
 
     <?php
     echo "News_Not_Available!!!";
-//         $url='http://newsapi.org/v2/top-headlines?country=in&apiKey=4f0ed34c2436488fbea43a2b2255489e';
-//         $response = file_get_contents($url);
-//         $data_items = json_decode($response);
-//     ?>
-// <div class="container mt-5">
-//     <?php
-//         foreach($data_items->articles as $data_item) {
-//     ?>
-//         <div class="row data_grid">
-//             <div class="col-md-3">
-//                 <img src="<?php echo $data_item->urlToImage?>" alt="news thumbnail">
-//             </div>
-//             <div class="col-md-9">
-//                 <h2>Title: <?php echo $data_item-> title?></h2>
-//                 <h5>Description: <?php echo $data_item-> description?></h5>
-//                 <p>Content: <?php echo $data_item-> content?></p>
-//                 <h6>Author: <?php echo $data_item-> author?></h6>
-//                 <h6>Published: <?php echo $data_item-> publishedAt?></h6>
-//             </div>
-//         </div>
-//<?php
-//}
+         $url='http://newsapi.org/v2/top-headlines?country=in&apiKey=4f0ed34c2436488fbea43a2b2255489e';
+         $response = file_get_contents($url);
+         $data_items = json_decode($response);
+     ?>
+ <div class="container mt-5">
+     <?php
+         foreach($data_items->articles as $data_item) {
+     ?>
+         <div class="row data_grid">
+             <div class="col-md-3">
+                 <img src="<?php echo $data_item->urlToImage?>" alt="news thumbnail">
+             </div>
+             <div class="col-md-9">
+                 <h2>Title: <?php echo $data_item-> title?></h2>
+                 <h5>Description: <?php echo $data_item-> description?></h5>
+                 <p>Content: <?php echo $data_item-> content?></p>
+                 <h6>Author: <?php echo $data_item-> author?></h6>
+                 <h6>Published: <?php echo $data_item-> publishedAt?></h6>
+             </div>
+         </div>
+<?php
+}
     ?>
 </div>
 
